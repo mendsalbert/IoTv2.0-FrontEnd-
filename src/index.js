@@ -1,12 +1,22 @@
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import * as serviceWorker from './serviceWorker';
 import App from './App';
+import { createStore, applyMiddleware, combineReducers } from 'redux';
+import { Provider } from 'react-redux';
+import ReduxThunk from 'redux-thunk';
+import authReducer from './store/reducers/authReducer';
 
-ReactDOM.render((
-  <BrowserRouter>
+const rootReducers = combineReducers({
+  auth: authReducer
+});
+
+const store = createStore(rootReducers, applyMiddleware(ReduxThunk));
+
+ReactDOM.render(
+  <Provider store={store}>
+    <BrowserRouter>
     <App />
-  </BrowserRouter>
-), document.getElementById('root'));
-
-serviceWorker.unregister();
+    </BrowserRouter>
+  </Provider>,
+  document.getElementById('root')
+);
