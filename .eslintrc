@@ -6,7 +6,6 @@
   },
   "extends": [
      'plugin:react/recommended',
-     'react/prop-types': 'off',
   ],
   "settings": {
     "import/resolver": {
@@ -22,6 +21,7 @@
     }
   },
   "rules": {
+    "react/prop-types": "off",
     "comma-dangle": "off",
     "jsx-a11y/anchor-is-valid": "off",
     "max-len": "off",
