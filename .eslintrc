@@ -4,6 +4,9 @@
     "es6": true,
     "browser": true
   },
+   "plugins": [
+        "react"
+   ],
   "extends": [
     "airbnb",
     "plugin:react/recommended"
@@ -31,6 +34,8 @@
     "react/jsx-filename-extension": "off",
     "react/jsx-props-no-spreading": "off",
     "react/react-in-jsx-scope": "off",
-    "react/require-default-props": "off"
+    "react/require-default-props": "off",
+    "react/jsx-uses-vars": "error",
+    "react/jsx-uses-react": "error",
   }
 }
