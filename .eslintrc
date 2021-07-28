@@ -34,6 +34,6 @@
     "react/require-default-props": "off",
     "react/jsx-no-duplicate-props": [1, { "ignoreCase": false }],
     "react/display-name": "off",
-    "react/jsx-key": [<enabled>, { "checkFragmentShorthand": <boolean> }]
+    "react/jsx-key": [1, { "checkFragmentShorthand": false }]
   }
 }
