@@ -1,41 +1,7 @@
 {
-  "root": true,
-  "env": {
-    "es6": true,
-    "browser": true
-  },
-   "plugins": [
-        "react"
-   ],
-  "extends": [
-    "airbnb",
-    "plugin:react/recommended"
-  ],
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "paths": [
-          "."
-        ],
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
-      }
+    "extends": "react-app",
+    "rules": {
+      "eqeqeq": "off",
+      "no-unused-vars": "off",
     }
-  },
-  "rules": {
-    "comma-dangle": "off",
-    "jsx-a11y/anchor-is-valid": "off",
-    "max-len": "off",
-    "no-console": "off",
-    "no-plusplus": "off",
-    "react/forbid-prop-types": "off",
-    "react/jsx-filename-extension": "off",
-    "react/jsx-props-no-spreading": "off",
-    "react/react-in-jsx-scope": "off",
-    "react/require-default-props": "off",
-    "react/jsx-uses-vars": "error",
-    "react/jsx-uses-react": "error",
-  }
-}
+},
