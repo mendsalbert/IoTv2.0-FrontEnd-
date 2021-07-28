@@ -6,7 +6,7 @@
   },
   "extends": [
      'plugin:react/recommended',
-     "react/prop-types": "off",
+     'react/prop-types': 'off',
   ],
   "settings": {
     "import/resolver": {
