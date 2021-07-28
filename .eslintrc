@@ -5,7 +5,8 @@
     "browser": true
   },
   "extends": [
-     'plugin:react/recommended'
+     'plugin:react/recommended',
+     "react/prop-types": "off",
   ],
   "settings": {
     "import/resolver": {
