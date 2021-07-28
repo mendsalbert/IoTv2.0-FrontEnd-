@@ -5,7 +5,8 @@
     "browser": true
   },
   "extends": [
-    "airbnb"
+    "airbnb",
+    "plugin:react/recommended"
   ],
   "settings": {
     "import/resolver": {
