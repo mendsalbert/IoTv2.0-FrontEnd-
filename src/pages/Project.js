@@ -70,7 +70,8 @@ const ProductList = () => {
 
     axios
       .post(
-        'http://localhost:5000/api/iot/v2.0/project/add-project',
+        // 'http://localhost:5000/api/iot/v2.0/project/add-project',
+        'http://10.10.64.11:5000/api/iot/v2.0/project/add-project',
         {
           pname: projectName,
           topic: projectTopic,
@@ -100,7 +101,8 @@ const ProductList = () => {
   useEffect(() => {
     var token = localStorage.getItem('UserToken');
     axios
-      .get('http://localhost:5000/api/iot/v2.0/project/get-projects', {
+      .get('http://10.10.64.11:5000/api/iot/v2.0/project/get-projects', {
+        // .get('http://localhost:5000/api/iot/v2.0/project/get-projects', {
         headers: {
           'x-auth-token': token
         }
