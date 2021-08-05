@@ -5,7 +5,7 @@
     "browser": true
   },
   "extends": [
-    "airbnb"
+     'plugin:react/recommended',
   ],
   "settings": {
     "import/resolver": {
@@ -21,6 +21,7 @@
     }
   },
   "rules": {
+    "react/prop-types": "off",
     "comma-dangle": "off",
     "jsx-a11y/anchor-is-valid": "off",
     "max-len": "off",
@@ -30,6 +31,9 @@
     "react/jsx-filename-extension": "off",
     "react/jsx-props-no-spreading": "off",
     "react/react-in-jsx-scope": "off",
-    "react/require-default-props": "off"
+    "react/require-default-props": "off",
+    "react/jsx-no-duplicate-props": [1, { "ignoreCase": false }],
+    "react/display-name": "off",
+    "react/jsx-key": [1, { "checkFragmentShorthand": false }]
   }
 }

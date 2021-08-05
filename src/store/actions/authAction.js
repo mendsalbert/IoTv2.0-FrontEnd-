@@ -36,9 +36,14 @@ export const logOut = () => {
 export const signUp = (username, email, password) => (dispatch) =>
   new Promise(function (resolve, reject) {
     axios
+<<<<<<< HEAD
       // .post('http://localhost:5000/api/iot/v2.0/user/sign-up', {
       // .post('http://10.10.64.11:5000/api/iot/v2.0/user/sign-up', {
       .post('http://10.10.64.11:5000/api/iot/v2.0/user/sign-up', {
+=======
+//       .post('http://localhost:5000/api/iot/v2.0/user/sign-up', {
+         .post('http://10.10.64.11:5000/api/iot/v2.0/user/sign-up', {
+>>>>>>> 2cfecf66510d44dcd17eb373739556ce20ec2f3b
         name: username,
         email: email,
         password: password
@@ -60,8 +65,13 @@ export const signUp = (username, email, password) => (dispatch) =>
 export const signIn = (email, password) => (dispatch) =>
   new Promise(function (resolve, reject) {
     axios
+<<<<<<< HEAD
       // .post('http://localhost:5000/api/iot/v2.0/user/sign-in', {
       .post('http://10.10.64.11:5000/api/iot/v2.0/user/sign-in', {
+=======
+//       .post('http://localhost:5000/api/iot/v2.0/user/sign-in', {
+    .post('http://10.10.64.11:5000/api/iot/v2.0/user/sign-in', {
+>>>>>>> 2cfecf66510d44dcd17eb373739556ce20ec2f3b
         email: email,
         password: password
       })
